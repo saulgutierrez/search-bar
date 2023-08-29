@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #202023;
+    padding: 0 20px;
+}
+
+::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+.content {
+    max-width: 450px;
+    margin: 150px auto;
+}
+
+.content .search {
+    width: 100%;
+    position: relative;
+}
+
+.search input {
+    color: #fff;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    background-color: #313134;
+    margin-bottom: 15px;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.search.active input{
+    border-radius: 100px;
+}
+
+.search .autocomplete {
+    color: #fff;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+    background-color: #313134;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search.active .autocomplete {
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+    background-color: #313134;
+}
+
+.autocomplete li {
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+}
+
+.search.active .autocomplete li {
+    display: block;
+}
+
+.autocomplete li:hover {
+    background-color: #52dc918f;
+}
+
+.search .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
