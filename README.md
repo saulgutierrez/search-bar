@@ -7,3 +7,5 @@ Technologies used:
 <li>Javascript</li>
 <li>Google Fonts</li>
 <li>Font Awesome</li>
+
+![image](https://github.com/saulgutierrez/search-bar/assets/62368834/adea05fa-4c6e-4dbc-b5ab-57db10e77937)
